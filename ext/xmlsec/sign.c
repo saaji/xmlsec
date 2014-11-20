@@ -20,7 +20,7 @@ static VALUE xmlsec_sign(VALUE self, xmlDocPtr doc, VALUE key_file, VALUE passwo
   /* create signature template for RSA-SHA1 enveloped signature */
   signNode = xmlSecTmplSignatureCreate( doc,
                                         xmlSecTransformInclC14NWithCommentsId,
-                                        xmlSecTransformRsaSha1Id,
+                                        xmlSecTransformRsaSha256Id,
                                        NULL
                                       );
   if(signNode == NULL) {
