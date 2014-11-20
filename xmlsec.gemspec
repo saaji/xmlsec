@@ -19,10 +19,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   # tests
-  s.add_development_dependency 'rake-compiler', "~> 0.7.7"
-  s.add_development_dependency 'rake', '0.8.7' # NB: 0.8.7 required by rake-compiler 0.7.9
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'nokogiri', '1.5.0'
-
+  s.add_development_dependency 'rake-compiler', "~> 0.9.3"
+  s.add_development_dependency 'rake', '~> 10.3.2'
+  s.add_development_dependency 'rspec', '~> 3.1.0'
+  s.add_development_dependency 'nokogiri', '~> 1.6.4.1'
 end
-

@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     XML Security Library test file
+XML Security Library test file
 -->
 <Service version="2.0">
   <Data>
-   <str>	Hello, World! The euro sign (ą) </str>
-   <smfing>
-    <!-- XML Security Library test file -->
-    <test1 somettr="VALUE"/>
-    <TEST2 SOMETTR="VALUE"/>
-   </smfing>
+    <str>	Hello, World! The euro sign (ą) </str>
+    <smfing>
+      <!-- XML Security Library test file -->
+      <test1 somettr="VALUE"/>
+      <TEST2 SOMETTR="VALUE"/>
+    </smfing>
   </Data>
-<Security><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-<SignedInfo>
-<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
-<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-<Reference URI="">
-<Transforms>
-<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-</Transforms>
-<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<DigestValue>cWRQ7e5Hp3G/m+AsreGhIefcB0A=</DigestValue>
-</Reference>
-</SignedInfo>
-<SignatureValue>VNdXZlm1D88wXUjJq6SaG+BrOTbRZeQRrO1bY/4vvJ0lKAQE2xJ+O/LV6XpVQM+f
-1DhHisEM/rqXgXN1AcT9/jFCakdhGINY7p0y2k2ZjNkZebd43xNJylwP4HCepIVx
-vXo1sUr7/c7Lovb+5sP5aTVD/6vvr6kWQRbhuhrHCjg=</SignatureValue>
-<KeyInfo>
-<X509Data>
-<X509Certificate>MIIB+zCCAWQCCQCNDSfdaw1XODANBgkqhkiG9w0BAQUFADBCMQswCQYDVQQGEwJY
-WDEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MRwwGgYDVQQKDBNEZWZhdWx0IENvbXBh
-bnkgTHRkMB4XDTEyMDMxMjE0MjExNVoXDTEzMDMxMjE0MjExNVowQjELMAkGA1UE
-BhMCWFgxFTATBgNVBAcMDERlZmF1bHQgQ2l0eTEcMBoGA1UECgwTRGVmYXVsdCBD
-b21wYW55IEx0ZDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzAkX2JwvyH6h
-UtXt9g7HAz/GQPe/nexZjGwVOfZtcLVR24wzSqMKUm+t+hsDrngZor7mYbkzrFwW
-JZKuMzTdOBFMdJABXQ26ik4X5G3oQvLCvvfxqGoci4BnOa2TnxvpRw7g1jekjGxn
-393bFgOXJIi0gsjx+hcr20qLdaEnJycCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBA
-8qZt/THE1SmLZ/55yTh3rxgcfdlJzk+iE9VYd9aseGHSbZmOEDjmtF6hNJBYw/BI
-oxAOVnMI6cuAbNe5ydub5YeelyJGrlPEcIs+lm2GkUCRFZd4krVO4r2wptD0KP8a
-5iD8CBI9Bl39pXP7k6pEM1UVPUfxyT/h7I2dpqxp+Q==</X509Certificate>
-</X509Data>
-<KeyValue>
-<RSAKeyValue>
-<Modulus>
-zAkX2JwvyH6hUtXt9g7HAz/GQPe/nexZjGwVOfZtcLVR24wzSqMKUm+t+hsDrngZ
-or7mYbkzrFwWJZKuMzTdOBFMdJABXQ26ik4X5G3oQvLCvvfxqGoci4BnOa2Tnxvp
-Rw7g1jekjGxn393bFgOXJIi0gsjx+hcr20qLdaEnJyc=
-</Modulus>
-<Exponent>
-AQAB
-</Exponent>
-</RSAKeyValue>
-</KeyValue>
-</KeyInfo>
-</Signature></Security></Service>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <DigestValue>xfXQlAI3YYn0WWACYo5D4O1PKlVoYE32nt+uPQKdBVE=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>dBY56aDq7M5qNOIm34aZGkBT0v0SEjUhbcGiNotkJfGVoxkzZpMVNyScnQGp3MbX
+      5fQcdoyVqSh4OW231v5hX5PYsEPnnBsqUFP6H65R8DtyjtMWvo5YFys0eWeVZ92q
+      r40N14IGt/mkwYF2BeUYI/vVkNeoQXkegCVqvI4Z3l4=</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>MIIB+zCCAWQCCQCNDSfdaw1XODANBgkqhkiG9w0BAQUFADBCMQswCQYDVQQGEwJY
+            WDEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MRwwGgYDVQQKDBNEZWZhdWx0IENvbXBh
+            bnkgTHRkMB4XDTEyMDMxMjE0MjExNVoXDTEzMDMxMjE0MjExNVowQjELMAkGA1UE
+            BhMCWFgxFTATBgNVBAcMDERlZmF1bHQgQ2l0eTEcMBoGA1UECgwTRGVmYXVsdCBD
+            b21wYW55IEx0ZDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzAkX2JwvyH6h
+            UtXt9g7HAz/GQPe/nexZjGwVOfZtcLVR24wzSqMKUm+t+hsDrngZor7mYbkzrFwW
+            JZKuMzTdOBFMdJABXQ26ik4X5G3oQvLCvvfxqGoci4BnOa2TnxvpRw7g1jekjGxn
+            393bFgOXJIi0gsjx+hcr20qLdaEnJycCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBA
+            8qZt/THE1SmLZ/55yTh3rxgcfdlJzk+iE9VYd9aseGHSbZmOEDjmtF6hNJBYw/BI
+            oxAOVnMI6cuAbNe5ydub5YeelyJGrlPEcIs+lm2GkUCRFZd4krVO4r2wptD0KP8a
+            5iD8CBI9Bl39pXP7k6pEM1UVPUfxyT/h7I2dpqxp+Q==</X509Certificate>
+          </X509Data>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>
+                zAkX2JwvyH6hUtXt9g7HAz/GQPe/nexZjGwVOfZtcLVR24wzSqMKUm+t+hsDrngZ
+                or7mYbkzrFwWJZKuMzTdOBFMdJABXQ26ik4X5G3oQvLCvvfxqGoci4BnOa2Tnxvp
+                Rw7g1jekjGxn393bFgOXJIi0gsjx+hcr20qLdaEnJyc=
+              </Modulus>
+              <Exponent>
+                AQAB
+              </Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+        </KeyInfo>
+      </Signature></Service>
