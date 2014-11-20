@@ -44,7 +44,7 @@ static VALUE xmlsec_sign(VALUE self, xmlDocPtr doc, VALUE key_file, VALUE passwo
 
   /* add reference */
   refNode = xmlSecTmplSignatureAddReference(signNode,
-                                            xmlSecTransformSha1Id,
+                                            xmlSecTransformSha256Id,
                                             NULL,
                                             "\0",
                                             NULL);
