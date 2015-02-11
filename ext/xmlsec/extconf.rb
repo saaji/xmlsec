@@ -5,22 +5,18 @@ def crash(str)
   exit 1
 end
 
-if (xc = with_config('xmlsec1-config')) or RUBY_PLATFORM.match(/darwin/i) then
-  xc = 'xmlsec1-config' if xc == true or xc.nil?
-  cflags = `#{xc} --cflags`.chomp
-  if $? != 0
-    cflags = nil
-  else
-    libs = `#{xc} --libs`.chomp
-    if $? != 0
-      libs = nil
-    else
-      $CFLAGS += ' ' + cflags
-      $libs = libs + " " + $libs
-    end
-  end
+xc = 'xmlsec1-config' if xc == true or xc.nil?
+cflags = `#{xc} --cflags`.chomp
+if $? != 0
+  cflags = nil
 else
-  pkg_config('xmlsec1-openssl') || pkg_config('xmlsec1')
+  libs = `#{xc} --libs`.chomp
+  if $? != 0
+    libs = nil
+  else
+    $CFLAGS += ' ' + cflags
+    $libs = libs + " " + $libs
+  end
 end
 
 unless (have_library('xmlsec1', 'xmlSecDSigCtxCreate') or
